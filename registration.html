@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Page information and links to shared website files -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Join Campus Connect or apply to help run events and projects with the college club.">
+  <meta name="theme-color" content="#1d4ed8">
+
+  <title>Registration | Campus Connect</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Lets keyboard users skip directly to the main page content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- The same header and navigation are used on every page -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span>Campus Connect</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a aria-current="page" href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content of the registration page -->
+  <main id="main">
+    <!-- Page introduction -->
+    <section class="page-hero compact-hero">
+      <p class="eyebrow">Your next step</p>
+      <h1>There’s a place<br><span>for you here.</span></h1>
+      <p>
+        Sign up as a member, or tell us you’d like to help bring club events to life.
+        We’ll be in touch with the next steps.
+      </p>
+    </section>
+
+    <!-- Form 1: Basic student membership registration -->
+    <section class="section forms-section">
+      <div class="form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">Start with the basics</p>
+          <h2>Join the club</h2>
+          <p>
+            Membership is open to all students. Fill out the short form and we’ll
+            share meeting details and upcoming events.
+          </p>
+
+          <div class="form-note">
+            <span aria-hidden="true">✦</span>
+            <p>
+              <strong>What happens next?</strong><br>
+              A club representative will contact you about the next meetup and
+              ways to get involved.
+            </p>
+          </div>
+        </div>
+
+        <!-- Each label's 'for' value matches its input's 'id' -->
+        <form class="form-card" action="#" method="get">
+          <div class="form-grid">
+            <div class="field">
+              <label for="student-name">
+                Full name <span aria-hidden="true">*</span>
+              </label>
+              <input id="student-name" name="student-name" type="text" autocomplete="name"
+                placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="field">
+              <label for="student-email">
+                College email <span aria-hidden="true">*</span>
+              </label>
+              <input id="student-email" name="student-email" type="email" autocomplete="email"
+                placeholder="you@college.edu" required>
+            </div>
+
+            <div class="field">
+              <label for="student-password">
+                Create a password <span aria-hidden="true">*</span>
+              </label>
+              <input id="student-password" name="student-password" type="password" minlength="8"
+                autocomplete="new-password" placeholder="At least 8 characters" required>
+              <small>Use 8 or more characters.</small>
+            </div>
+
+            <div class="field">
+              <label for="student-age">
+                Age <span aria-hidden="true">*</span>
+              </label>
+              <input id="student-age" name="student-age" type="number" min="16" max="100" placeholder="18" required>
+            </div>
+
+            <div class="field field-full">
+              <label for="student-course">Course or area of study</label>
+              <input id="student-course" name="student-course" type="text" placeholder="e.g. Computer Science">
+            </div>
+
+            <div class="field field-full">
+              <label class="check-label">
+                <input type="checkbox" name="updates" value="yes">
+                <span>Send me occasional club updates and event reminders.</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Create my membership
+          </button>
+          <p class="form-footnote">
+            Fields marked <span aria-hidden="true">*</span> are required.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Form 2: Volunteer application demonstrating additional input types -->
+    <section class="section section-soft">
+      <div class="form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">Help make it happen</p>
+          <h2>Apply to join the team</h2>
+          <p>
+            Have an idea, a skill to share, or a little time to volunteer? Tell us
+            what you’re interested in and we’ll find a way to work together.
+          </p>
+          <p class="small-copy">
+            This application is for current students interested in helping with
+            club events and activities.
+          </p>
+        </div>
+
+        <form class="form-card" action="#" method="get">
+          <div class="form-grid">
+            <div class="field">
+              <label for="applicant-name">
+                Full name <span aria-hidden="true">*</span>
+              </label>
+              <input id="applicant-name" name="applicant-name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="applicant-email">
+                Email address <span aria-hidden="true">*</span>
+              </label>
+              <input id="applicant-email" name="applicant-email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="applicant-phone">Phone number</label>
+              <input id="applicant-phone" name="applicant-phone" type="tel" autocomplete="tel"
+                placeholder="+1 555 010 0123">
+            </div>
+
+            <div class="field">
+              <label for="portfolio">Portfolio or profile URL</label>
+              <input id="portfolio" name="portfolio" type="url" placeholder="https://example.com">
+            </div>
+
+            <div class="field">
+              <label for="available-from">Available from</label>
+              <input id="available-from" name="available-from" type="date">
+            </div>
+
+            <div class="field">
+              <label for="preferred-time">Preferred time to meet</label>
+              <input id="preferred-time" name="preferred-time" type="time">
+            </div>
+
+            <!-- Checkboxes allow applicants to choose more than one area -->
+            <fieldset class="field field-full">
+              <legend>Which areas interest you?</legend>
+              <div class="choice-row">
+                <label class="check-label">
+                  <input type="checkbox" name="interest" value="events">
+                  <span>Events</span>
+                </label>
+                <label class="check-label">
+                  <input type="checkbox" name="interest" value="design">
+                  <span>Design</span>
+                </label>
+                <label class="check-label">
+                  <input type="checkbox" name="interest" value="outreach">
+                  <span>Outreach</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Radio buttons allow applicants to choose one answer -->
+            <fieldset class="field field-full">
+              <legend>How often could you help?</legend>
+              <div class="choice-row">
+                <label class="check-label">
+                  <input type="radio" name="availability" value="weekly">
+                  <span>Weekly</span>
+                </label>
+                <label class="check-label">
+                  <input type="radio" name="availability" value="monthly">
+                  <span>Monthly</span>
+                </label>
+                <label class="check-label">
+                  <input type="radio" name="availability" value="occasionally">
+                  <span>Occasionally</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="role">Role you’re interested in</label>
+              <select id="role" name="role">
+                <option value="">Choose an area</option>
+                <option value="events">Event planning</option>
+                <option value="communications">Communications</option>
+                <option value="design">Creative and design</option>
+                <option value="community">Community outreach</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="attachment">Resume or work sample</label>
+              <input id="attachment" name="attachment" type="file" accept=".pdf,.doc,.docx,.png,.jpg">
+            </div>
+
+            <div class="field field-full">
+              <label for="motivation">What would you like to contribute?</label>
+              <textarea id="motivation" name="motivation" rows="4" maxlength="600"
+                placeholder="Tell us a little about your interests or an idea you’d love to try."></textarea>
+            </div>
+
+            <div class="field field-full">
+              <label class="check-label">
+                <input type="checkbox" name="consent" value="yes" required>
+                <span>I confirm that the information above is accurate.</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Send my application
+          </button>
+          <p class="form-footnote">
+            Your information is used only to follow up about Campus Connect.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- The footer is shared across all four pages -->
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span>Campus Connect</span>
+      </a>
+      <p>A student community built around curiosity and connection.</p>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Campus Connect College Club</span>
+      <a href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+</body>
+
+</html>
